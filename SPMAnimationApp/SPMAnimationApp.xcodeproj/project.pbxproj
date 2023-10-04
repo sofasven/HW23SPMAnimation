@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		C7387E782ACE176C004239DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7387E772ACE176C004239DB /* AppDelegate.swift */; };
 		C7387E7A2ACE176C004239DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7387E792ACE176C004239DB /* SceneDelegate.swift */; };
-		C7387E7C2ACE176C004239DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7387E7B2ACE176C004239DB /* ViewController.swift */; };
+		C7387E7C2ACE176C004239DB /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7387E7B2ACE176C004239DB /* FirstVC.swift */; };
 		C7387E7F2ACE176C004239DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7387E7D2ACE176C004239DB /* Main.storyboard */; };
 		C7387E812ACE176E004239DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7387E802ACE176E004239DB /* Assets.xcassets */; };
 		C7387E842ACE176E004239DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7387E822ACE176E004239DB /* LaunchScreen.storyboard */; };
+		C7387E8D2ACE1829004239DB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7387E8C2ACE1829004239DB /* Lottie */; };
+		C7387E902ACE18FD004239DB /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = C7387E8F2ACE18FD004239DB /* NVActivityIndicatorView */; };
+		C7387E922ACE18FD004239DB /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = C7387E912ACE18FD004239DB /* NVActivityIndicatorViewExtended */; };
+		C7387E972ACE1AAA004239DB /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7387E962ACE1AAA004239DB /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7387E742ACE176C004239DB /* SPMAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7387E772ACE176C004239DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7387E792ACE176C004239DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7387E7B2ACE176C004239DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7387E7B2ACE176C004239DB /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		C7387E7E2ACE176C004239DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7387E802ACE176E004239DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7387E832ACE176E004239DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7387E852ACE176E004239DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7387E962ACE1AAA004239DB /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7387E922ACE18FD004239DB /* NVActivityIndicatorViewExtended in Frameworks */,
+				C7387E902ACE18FD004239DB /* NVActivityIndicatorView in Frameworks */,
+				C7387E8D2ACE1829004239DB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,40 @@
 		C7387E762ACE176C004239DB /* SPMAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7387E772ACE176C004239DB /* AppDelegate.swift */,
-				C7387E792ACE176C004239DB /* SceneDelegate.swift */,
-				C7387E7B2ACE176C004239DB /* ViewController.swift */,
-				C7387E7D2ACE176C004239DB /* Main.storyboard */,
+				C7387E952ACE193D004239DB /* Controllers */,
+				C7387E942ACE1931004239DB /* Views */,
 				C7387E802ACE176E004239DB /* Assets.xcassets */,
-				C7387E822ACE176E004239DB /* LaunchScreen.storyboard */,
 				C7387E852ACE176E004239DB /* Info.plist */,
+				C7387E932ACE190C004239DB /* App */,
 			);
 			path = SPMAnimationApp;
+			sourceTree = "<group>";
+		};
+		C7387E932ACE190C004239DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7387E772ACE176C004239DB /* AppDelegate.swift */,
+				C7387E792ACE176C004239DB /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C7387E942ACE1931004239DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7387E7D2ACE176C004239DB /* Main.storyboard */,
+				C7387E822ACE176E004239DB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7387E952ACE193D004239DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7387E7B2ACE176C004239DB /* FirstVC.swift */,
+				C7387E962ACE1AAA004239DB /* BaseVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,11 @@
 			dependencies = (
 			);
 			name = SPMAnimationApp;
+			packageProductDependencies = (
+				C7387E8C2ACE1829004239DB /* Lottie */,
+				C7387E8F2ACE18FD004239DB /* NVActivityIndicatorView */,
+				C7387E912ACE18FD004239DB /* NVActivityIndicatorViewExtended */,
+			);
 			productName = SPMAnimationApp;
 			productReference = C7387E742ACE176C004239DB /* SPMAnimationApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,10 @@
 				Base,
 			);
 			mainGroup = C7387E6B2ACE176C004239DB;
+			packageReferences = (
+				C7387E8B2ACE1829004239DB /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				C7387E8E2ACE18FD004239DB /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = C7387E752ACE176C004239DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7387E7C2ACE176C004239DB /* ViewController.swift in Sources */,
+				C7387E7C2ACE176C004239DB /* FirstVC.swift in Sources */,
 				C7387E782ACE176C004239DB /* AppDelegate.swift in Sources */,
 				C7387E7A2ACE176C004239DB /* SceneDelegate.swift in Sources */,
+				C7387E972ACE1AAA004239DB /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +401,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7387E8B2ACE1829004239DB /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		C7387E8E2ACE18FD004239DB /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7387E8C2ACE1829004239DB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7387E8B2ACE1829004239DB /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		C7387E8F2ACE18FD004239DB /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7387E8E2ACE18FD004239DB /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		C7387E912ACE18FD004239DB /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7387E8E2ACE18FD004239DB /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7387E6C2ACE176C004239DB /* Project object */;
 }
